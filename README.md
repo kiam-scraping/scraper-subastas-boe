@@ -1,59 +1,43 @@
-# scraper-subastas-boe
-Scraper automatizado para extraer datos de subastas judiciales activas en el BOE (España)
+# 🏛️ Dataset de Subastas Judiciales del BOE (España)
 
-# 🏛️ Scraper de Subastas Judiciales del BOE
+Este repositorio contiene un **dataset real extraído del portal oficial de subastas judiciales del BOE (Boletín Oficial del Estado, España)**. El archivo incluye información clave sobre subastas activas de bienes inmuebles, útil para análisis de inversión, estudios de mercado o proyectos de datos.
 
-Proyecto de scraping real usando Python para extraer datos del portal oficial de subastas del BOE (Boletín Oficial del Estado, España). Este script automatiza la recolección de datos de todas las subastas activas de bienes inmuebles, extrayendo detalles como valor de tasación, situación posesoria, ubicación, tipo de bien y más.
+## 📦 Contenido
 
-## 🚀 Tecnologías utilizadas
+- `13. subastas_basico.csv` → Datos estructurados de subastas activas
+- `LICENSE` → Licencia de uso
+- `README.md` → Este archivo
 
-- `requests` para realizar peticiones HTTP
-- `BeautifulSoup` para parsear el HTML
-- `random` para rotación de User-Agents
-- `csv` para guardar los datos estructurados
+## 📊 Campos incluidos (pueden variar)
 
-## ⚙️ Características del scraper
-
-- Recorre automáticamente todas las páginas de subastas activas
-- Extrae datos clave de cada subasta individual
-- Evita bloqueos con rotación de headers
-- Genera un CSV con columnas dinámicas
-- Preparado para ser analizado fácilmente con `pandas`
-
-## 📁 Archivos
-
-- `scraper_boe.py` → script principal
-- `13. subastas_basico.csv` → ejemplo de salida con subastas reales
-- `README.md` → este archivo
+- Valor de tasación
+- Situación posesoria
+- Dirección del bien
+- Tipo de inmueble
+- Enlace a la subasta oficial
+- Puja mínima y tramos
+- Otros datos relevantes disponibles por subasta
 
 ## 🧠 Casos de uso
 
-- Análisis de oportunidades de inversión
-- Exploración del mercado judicial de inmuebles
-- Filtrado por ocupación, valor, ubicación o tipo de subasta
-- Proyecto de portfolio para scraping freelance
+- Análisis de oportunidades de inversión inmobiliaria
+- Filtros por ocupación, valor, ubicación o tipo de subasta
+- Visualizaciones por ciudad, valor medio, etc.
+- Ejemplo de dataset para portfolios de data o scraping
 
-## 🧪 Próximos pasos
+## 📅 Fecha del dataset
 
-- Añadir limpieza de datos con `pandas`
-- Visualización de datos: subastas por ciudad, valor medio, etc.
-- Filtros avanzados (sin ocupantes, con mayor diferencia de valor vs puja mínima)
+> 📌 Este dataset fue extraído en **abril de 2025** y refleja el estado real de las subastas activas en ese momento.
 
-## ⚠️ Notas técnicas
+## ⚠️ Importante
 
-Este scraper está optimizado para funcionar sin proxies, gracias a la rotación de `User-Agent`. En pruebas reales ha sido capaz de extraer más de 800 subastas sin bloqueos.
+Este repositorio **no incluye el código utilizado para la extracción**, por razones de protección técnica y uso legítimo del scraping. Solo se proporciona el resultado limpio y listo para análisis.
 
-Sin embargo, si el portal del BOE implementa restricciones más agresivas (bloqueo por IP o frecuencia de peticiones), es posible que se requiera:
+## 📄 Licencia
 
-- Añadir pausas entre peticiones con `time.sleep()`
-- Integrar proxies rotativos o servicios como ScraperAPI
-
-El script está estructurado para facilitar estas mejoras en caso de ser necesarias.
-
-
-## ✍️ Autor
-
-Proyecto creado por **Kiam** [`@kiam-scraping`](https://github.com/kiam-scraping)
+Consulta el archivo `LICENSE` para conocer los términos de uso. **Está prohibido su uso comercial o republicación sin autorización expresa.**
 
 ---
 
+**Autor:** [@kiam-scraping](https://github.com/kiam-scraping)  
+📫 Contacto profesional disponible bajo consulta privada.
